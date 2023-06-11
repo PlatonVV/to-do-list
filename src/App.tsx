@@ -10,7 +10,7 @@ import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
-import {Menu} from '@mui/icons-material';
+import Menu from '@mui/icons-material/Menu';
 import {
     addTodolistAC,
     changeTodolistFilterAC,
@@ -23,6 +23,7 @@ import {
 import {createTaskTC, removeTaskTC, updateTaskStatusTC, updateTaskTitleTC} from './state/tasks-reducer';
 import {TaskStatuses, TaskType} from './api/todolists-api';
 import {useAppDispatch, useAppSelector} from './hooks/hooks';
+import LinearProgress from '@mui/material/LinearProgress';
 
 export type TasksStateType = {
     [key: string]: Array<TaskType>
@@ -84,6 +85,7 @@ function App()  {
                     </Typography>
                     <Button color="inherit">Login</Button>
                 </Toolbar>
+                <LinearProgress color="secondary" />
             </AppBar>
             <Container fixed>
                 <Grid container style={{padding: '20px'}}>

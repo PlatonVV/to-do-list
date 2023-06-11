@@ -1,6 +1,6 @@
 import React, { ChangeEvent, useCallback } from 'react'
 import { EditableSpan } from './EditableSpan'
-import { Delete } from '@mui/icons-material';
+import  Delete  from '@mui/icons-material/Delete';
 import IconButton from '@mui/material/IconButton';
 import Checkbox from '@mui/material/Checkbox';
 import { TaskStatuses, TaskType } from './api/todolists-api'
